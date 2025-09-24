@@ -17,10 +17,10 @@ const HeroSection = () => {
 		>
 			<div className="container mx-auto px-6 text-center">
 				<div className="max-w-4xl mx-auto">
-					<p className="text-lg font-medium tracking-wider uppercase mb-6">
+					<p className="text-md sm:text-lg font-medium tracking-wider uppercase mb-6">
 						Next-Gen Brands
 					</p>
-					<h1 className="text-5xl md:text-7xl font-medium mb-8 text-balance">
+					<h1 className="text-3xl sm:text-5xl font-medium mb-8 text-balance">
 						<span className="font-bold">
 							The future belongs to the brands that define the
 						</span>{" "}
@@ -29,7 +29,7 @@ const HeroSection = () => {
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Button
 							size="lg"
-							className="bg-primary text-primary-foreground hover:bg-primary/80"
+							className="backdrop-blur-md bg-white/10 text-primary-foreground hover:bg-primary/80"
 						>
 							Start Your Journey
 						</Button>

@@ -6,7 +6,7 @@ const Header = () => {
 			<div className="container mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4">
 				{/* Logo + Brand Name */}
 				<div className="flex items-center gap-2">
-					<div className="relative w-20 h-10">
+					<div className="relative w-10 h-8 sm:w-20 sm:h-10">
 						<Image
 							src="/logo-nobg.png"
 							alt="Marcanza logo"
@@ -15,13 +15,13 @@ const Header = () => {
 							priority
 						/>
 					</div>
-					<h1 className="text-2xl font-light tracking-wide select-none">
+					<h1 className="text-xl sm:text-2xl font-light tracking-wide select-none">
 						<span className="font-bold">MARC</span>ANZA
 					</h1>
 				</div>
 
 				{/* Tagline */}
-				<div className="text-xl sm:text-2xl font-medium select-none cursor-default flex items-center gap-2 relative">
+				<div className="text-lg sm:text-2xl font-medium select-none cursor-default flex items-center gap-2 relative">
 					<span className="font-bold">Build. Boost. </span>
 					<span className="relative">
 						Brand.
