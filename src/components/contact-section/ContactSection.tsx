@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from "motion/react";
-import ContactUs from "../forms/contactus";
+import ContactUs from "../forms/ContactForm";
 
 export default function ContactSection() {
   return (
@@ -13,34 +13,28 @@ export default function ContactSection() {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="relative flex items-center justify-center overflow-hidden"
+      className="relative flex flex-col md:flex-row items-start justify-center overflow-hidden m-4"
     >
-      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-4">
-        <div className="p-6 place-content-between">
-          <div>
-            <h1 className="text-3xl sm:text-5xl font-light mb-8 leading-tight">
-              <span className="font-bold">
-                We're ready to hear from
-              </span>{" "}
-              you
-              <span className="font-bold">
-                !
-              </span>{" "}
-            </h1>
-          </div>
-          <div>
-            <p className="">
-              We love what we do, and even more to do it from Hyderabad.
-              Although we work in a hybrid way, our office in Hyderabad
-              is open to you. Use us as an excuse to visit and discover why
-              it is the best place to grow a business, surrounded by opportunity.
-            </p>
-          </div>
-        </div>
-        <div className="w-full">
-          <ContactUs />
-        </div>
+      {/* Text Section */}
+      <div className="w-full md:w-1/2 p-6 flex flex-col justify-start">
+        <h1 className="text-4xl sm:text-5xl font-light mb-8 leading-tight max-w-[70vw] md:max-w-[40vw]">
+          <span className="font-bold">We&apos;re ready to hear from</span> you
+          <span className="font-bold">!</span>
+        </h1>
+
+        <p className="text-gray-300 leading-relaxed">
+          We love what we do, and even more to do it from Hyderabad.
+          Although we work in a hybrid way, our office in Hyderabad
+          is open to you. Use us as an excuse to visit and discover why
+          it is the best place to grow a business, surrounded by opportunity.
+        </p>
       </div>
-    </ motion.section>
-  )
+
+      {/* Contact Form Section */}
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <ContactUs />
+      </div>
+    </motion.section>
+  );
 }
+
